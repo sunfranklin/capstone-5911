@@ -4,24 +4,38 @@
     android:layout_height="match_parent"
     tools:context=".StartInterview" >
 
-    <RelativeLayout
-        android:id="@+id/linearLayout1"
+    <LinearLayout
+        android:id="@+id/footer"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
-        android:background="#971425" >
+        android:background="#971425"
+        android:weightSum="3" >
 
         <ImageButton
             android:id="@+id/home_button_main_screen"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
             android:background="#971425"
-            android:gravity="center"
             android:src="@drawable/home_button_75" />
 
-    </RelativeLayout>
+        <ImageButton
+            android:id="@+id/patient_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ef3d34"
+            android:src="@drawable/patient_button_active75" />
+        
+        <ImageButton
+            android:id="@+id/about_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#971425"
+            android:src="@drawable/about_button_75" />
+    </LinearLayout>
 
     <EditText
         android:id="@+id/interviewAge"
@@ -72,44 +86,23 @@
             android:src="@drawable/help_button_50" />
 
         <TextView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="2"
             android:gravity="center"
-            android:text="OSU TBI-ID"
+            android:text="@string/osu_tbi_id"
             android:textColor="#ffffff"
-            android:textSize="32px"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
         <ImageButton
-            android:id="@+id/patient_button"
-            android:layout_width="50dp"
+            android:id="@+id/settings_button"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#971425"
-            android:src="@drawable/patient_button_active_50" />
+            android:src="@drawable/settings_button_50" />
     </LinearLayout>
-
-    <ImageButton
-        android:id="@+id/start_interview_button"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_above="@+id/linearLayout1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="39dp"
-        android:src="@drawable/next_button_75" />
-
-    <TextView
-        android:id="@+id/enterInfo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/header"
-        android:layout_marginTop="63dp"
-        android:ems="10"
-        android:gravity="center"
-        android:text="Please Enter Your Information"
-        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/interviewName"
@@ -117,9 +110,33 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/date"
         android:layout_below="@+id/enterInfo"
-        android:layout_marginTop="51dp"
+        android:layout_marginTop="17dp"
         android:ems="10"
         android:hint="Name:"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/enterInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:gravity="center"
+        android:text="Please Enter Your Information"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/start_interview_button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/date"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/next_button_75" />
 
 </RelativeLayout>
