@@ -40,9 +40,17 @@ public class StartInterview extends Activity {
 				WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		
 		setContentView(R.layout.start_interview);
+
+		//Home Button
+		ImageButton homeButton = (ImageButton) findViewById(R.id.home_button_main_screen);
+		homeButton.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+				Intent i = new Intent(getApplicationContext(), com.tbi_id.MainActivity.class);
+				startActivity(i);
+			}
+		});
 		
-		ImageButton patientButton = (ImageButton) findViewById(R.id.patient_button);
-		patientButton.setEnabled(false);
+		//Start Interview Button
 		ImageButton startInterviewButton = (ImageButton) findViewById(R.id.start_interview_button);
 		startInterviewButton.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {

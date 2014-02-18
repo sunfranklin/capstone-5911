@@ -7,7 +7,6 @@ import android.view.Menu;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.Button;
 import android.widget.ImageButton;
 
 public class MainActivity extends Activity {
@@ -21,28 +20,33 @@ public class MainActivity extends Activity {
 				WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		setContentView(R.layout.activity_main);
 		
-		ImageButton homeButton = (ImageButton)findViewById(R.id.home_button_main_screen);
+		ImageButton homeButton = (ImageButton) findViewById(R.id.home_button_main_screen);
 		homeButton.setEnabled(false);
 		
+		//Settings button
 		ImageButton settingsButton = (ImageButton) findViewById(R.id.settings_button);
 		settingsButton.setOnClickListener(new View.OnClickListener() {
-			
 			@Override
 			public void onClick(View v) {
-				
-
 				Intent i = new Intent(getApplicationContext(), com.tbi_id.SettingsActivity.class);
-				startActivity(i);
-				
-					
-				
+				startActivity(i);				
 			}
 		});
 		
+		//Start Interview button
 		ImageButton startButton = (ImageButton) findViewById(R.id.start_interview_button);
 		startButton.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 
+				Intent i = new Intent(getApplicationContext(), com.tbi_id.StartInterview.class);
+				startActivity(i);
+			}
+		});
+		
+		//Patient Button
+		ImageButton patientButton = (ImageButton) findViewById(R.id.patient_button);
+		patientButton.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
 				Intent i = new Intent(getApplicationContext(), com.tbi_id.StartInterview.class);
 				startActivity(i);
 			}

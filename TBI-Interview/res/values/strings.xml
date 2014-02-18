@@ -9,11 +9,11 @@
     <string name="step_1">Step 1</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
-    <string name="step_1_question1">In your lifetime, have you ever been hospitalized or treated in an emergency room following an injury to your head or neck? Think about any childhood injuries you remember or were told about.</string>
-    <string name="step_1_question2">In your lifetime, have you ever injured your head or neck in a car accident or from crashing some other moving vehicle like a bicycle, motorcycle, or ATV?</string>
-    <string name="step_1_question3">In your lifetime, have you ever injured your head or neck in a fall or from being hit by something (for example, falling from a bike or horse, rollerblading, falling on ice, being hit by a rock)? Have you ever injured your head or neck playing sports or on the playground?</string>
-    <string name="step_1_question4">In your lifetime, have you ever injured your head or neck in a fight, from being hit by someone, or from being shaken violently? Have you ever been shot in the head?</string>
-    <string name="step_1_question5">In your lifetime, have you ever been nearby when an explosion or blast has occurred? If you served in the military, think about any combat- or training-related incidents.</string>
+    <string name="step_1_question1">1. In your lifetime, have you ever been hospitalized or treated in an emergency room following an injury to your head or neck? Think about any childhood injuries you remember or were told about.</string>
+    <string name="step_1_question2">2. In your lifetime, have you ever injured your head or neck in a car accident or from crashing some other moving vehicle like a bicycle, motorcycle, or ATV?</string>
+    <string name="step_1_question3">3. In your lifetime, have you ever injured your head or neck in a fall or from being hit by something (for example, falling from a bike or horse, rollerblading, falling on ice, being hit by a rock)? Have you ever injured your head or neck playing sports or on the playground?</string>
+    <string name="step_1_question4">4. In your lifetime, have you ever injured your head or neck in a fight, from being hit by someone, or from being shaken violently? Have you ever been shot in the head?</string>
+    <string name="step_1_question5">5. In your lifetime, have you ever been nearby when an explosion or blast has occurred? If you served in the military, think about any combat- or training-related incidents.</string>
     <string name="title_activity_step1_cause">Step1Cause</string>
     <string name="pref_hippa_compliant">HIPPA Compliance</string>
     <string name="pref_hippa_summary">Configure App for Hippa Compliance</string>
@@ -22,5 +22,6 @@
     <string name="pref_user_profile">User Profile</string>
     <string name="pref_update_setting">Update Settings</string>
     <string name="title_activity_preferences">Preferences</string>
+    <string name="osu_tbi_id">OSU TBI-ID</string>
 
 </resources>
