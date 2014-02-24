@@ -15,13 +15,10 @@
     <string name="step_1_question4">4. In your lifetime, have you ever injured your head or neck in a fight, from being hit by someone, or from being shaken violently? Have you ever been shot in the head?</string>
     <string name="step_1_question5">5. In your lifetime, have you ever been nearby when an explosion or blast has occurred? If you served in the military, think about any combat- or training-related incidents.</string>
     <string name="title_activity_step1_cause">Step1Cause</string>
-    <string name="pref_hippa_compliant">HIPPA Compliance</string>
-    <string name="pref_hippa_summary">Configure App for Hippa Compliance</string>
-    <string name="pref_user_name">Set username</string>
-    <string name="pref_user_name_summary">Set your username</string>
-    <string name="pref_user_profile">User Profile</string>
-    <string name="pref_update_setting">Update Settings</string>
-    <string name="title_activity_preferences">Preferences</string>
     <string name="osu_tbi_id">OSU TBI-ID</string>
+    <string name="hipaaComplianceCheckbox">Are you free from HIPAA restrictrions?</string>
+    <string name="settingsTitle">Settings</string>
+    <string name="enterEmailHipaa">Please Enter Your Email Below:</string>
+    <string name="emailHint">Email</string>
 
 </resources>
