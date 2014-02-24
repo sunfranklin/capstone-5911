@@ -20,12 +20,23 @@ public class Step1Activity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		
-		
+
 		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
 				WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		setContentView(R.layout.activity_step1);
+		
+		
+		//Settings Button
+		ImageButton settingsButton = (ImageButton) findViewById(R.id.settings_button);
+		settingsButton.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+				Intent i = new Intent(getApplicationContext(), com.tbi_id.SettingsActivity.class);
+				startActivity(i);
+			} 
+	
+		});
+		
 		Intent intent = getIntent();
 		Bundle b = intent.getExtras();
 		questionNum = b.getInt("questionNum");

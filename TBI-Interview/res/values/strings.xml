@@ -23,5 +23,7 @@
     <string name="pref_update_setting">Update Settings</string>
     <string name="title_activity_preferences">Preferences</string>
     <string name="osu_tbi_id">OSU TBI-ID</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="training">Free online training on administration of the OSU TBI-ID is available at:</string>
 
 </resources>
