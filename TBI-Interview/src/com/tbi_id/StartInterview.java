@@ -35,14 +35,16 @@ public class StartInterview extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		// remove notification and action bars
 		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
 				WindowManager.LayoutParams.FLAG_FULLSCREEN);
-		
+		// set view from xml
 		setContentView(R.layout.start_interview);
 
 		//Home Button
 		ImageButton homeButton = (ImageButton) findViewById(R.id.home_button_main_screen);
+		//if the home button is clicked, send the user back to the home screen
 		homeButton.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				Intent i = new Intent(getApplicationContext(), com.tbi_id.MainActivity.class);
@@ -52,6 +54,7 @@ public class StartInterview extends Activity {
 		
 		//Start Interview Button
 		ImageButton startInterviewButton = (ImageButton) findViewById(R.id.start_interview_button);
+		//when the button is pressed, save all inputted data into variables and place them into hashmap for later retrieval
 		startInterviewButton.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				EditText interviewNameInput = (EditText) findViewById(R.id.interviewName);
@@ -69,24 +72,7 @@ public class StartInterview extends Activity {
 				data.put("FileName", "tbi"+interviewId+interviewDate);
 				
 
-			//	String FILENAME = "tbi_" + interviewId;
-
-			/*	FileOutputStream fos;
-				try {
-					fos = openFileOutput(FILENAME, Context.MODE_PRIVATE);
-					fos.write(interviewName.getBytes());
-					fos.write("\n".getBytes());
-					fos.write(interviewId.getBytes());
-					fos.write("\n".getBytes());
-					fos.write(interviewAge.getBytes());
-					fos.write("\n".getBytes());
-					fos.write(interviewDate.getBytes());
-					fos.close();
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}*/
-				
+				//start new intent and bundle, add the hashmap with the input data to the bundle along with the intialization of the questionNum
 				Intent i = new Intent(getApplicationContext(), com.tbi_id.Step1Activity.class);
 				Bundle b = new Bundle();
 				b.putSerializable("patientData",data);
