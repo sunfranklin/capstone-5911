@@ -38,6 +38,10 @@
             android:name="com.tbi_id.SettingsActivity"
             android:label="@string/settingsTitle" >
         </activity>
+        <activity
+            android:name="com.tbi_id.AboutActivity"
+            android:label="@string/title_activity_about" >
+        </activity>
     </application>
 
 </manifest>

@@ -16,9 +16,14 @@
     <string name="step_1_question5">5. In your lifetime, have you ever been nearby when an explosion or blast has occurred? If you served in the military, think about any combat- or training-related incidents.</string>
     <string name="title_activity_step1_cause">Step1Cause</string>
     <string name="osu_tbi_id">OSU TBI-ID</string>
+<<<<<<< HEAD
     <string name="hipaaComplianceCheckbox">Are you free from HIPAA restrictrions?</string>
     <string name="settingsTitle">Settings</string>
     <string name="enterEmailHipaa">Please Enter Your Email Below:</string>
     <string name="emailHint">Email</string>
+=======
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="training">Free online training on administration of the OSU TBI-ID is available at:</string>
+>>>>>>> origin/frank_2_13_2014
 
 </resources>

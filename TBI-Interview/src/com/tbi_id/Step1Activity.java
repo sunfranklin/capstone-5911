@@ -20,14 +20,33 @@ public class Step1Activity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+<<<<<<< HEAD
 		
 		//remove action bar and notifcation bar
+=======
+
+>>>>>>> origin/frank_2_13_2014
 		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
 				WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		//set view from xml
 		setContentView(R.layout.activity_step1);
+<<<<<<< HEAD
 		//get passed data from bundle which has patient info and questionNum in it and set them to variables for use
+=======
+		
+		
+		//Settings Button
+		ImageButton settingsButton = (ImageButton) findViewById(R.id.settings_button);
+		settingsButton.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+				Intent i = new Intent(getApplicationContext(), com.tbi_id.SettingsActivity.class);
+				startActivity(i);
+			} 
+	
+		});
+		
+>>>>>>> origin/frank_2_13_2014
 		Intent intent = getIntent();
 		Bundle b = intent.getExtras();
 		questionNum = b.getInt("questionNum");
