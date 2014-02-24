@@ -90,7 +90,6 @@ public class StartInterview extends Activity {
 				Intent i = new Intent(getApplicationContext(), com.tbi_id.Step1Activity.class);
 				Bundle b = new Bundle();
 				b.putSerializable("patientData",data);
-				b.putSerializable("questionNum", 1);
 				i.putExtras(b);
 				startActivity(i);
 
